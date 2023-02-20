@@ -25,12 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install venv
-        run: |
-          echo Hello, world!
-          python --version
-          python -m venv ./venv
-          Invoke-Expression ("venv/Scripts/activate.ps1")
-          pip install mypy flake8
+        run: pip install mypy flake8
 
       - name: type-test-job
         run: |
